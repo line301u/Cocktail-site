@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Cocktail site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <section id="popop">
+        <article id="article">
+            <button id="luk">X</button>
+            <img src="" alt="">
+            <h2 class="navn"></h2>
+            <p class="ingredienser"></p>
+            <p class="opskrift"></p>
+        </article>
+    </section>
+
+
+    <header>
+        <h1 class="hidden">Cocktail Site</h1>
+        <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="index.html#forside">Forside</a></li>
+                <li><a href="index.html#drinks">Drinks</a></li>
+                <li><a href="index.html#kontakt">Kontaktak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <nav id="dropdownDrinks">
+        <div id="dropdownknap"> ↓ Sorter efter</div>
+        <ul id="sorterdrinks" class="hidden">
+            <li><button class="filter valgt" data-kategori="alle">Alle</button></li>
+            <li><button class="filter" data-kategori="vodka">Vodka</button></li>
+            <li> <button class="filter" data-kategori="gin">Gin</button></li>
+            <li><button class="filter" data-kategori="tequila">Tequila</button></li>
+            <li> <button class="filter" data-kategori="rom">Rom</button></li>
+            <li> <button class="filter" data-kategori="whiskey">Whiskey</button></li>
+        </ul>
+    </nav>
+
+
+    <h1>Alle</h1>
+
+    <section id="container"></section>
+
+
+    <template>
+        <article id="drink">
+            <img src="" alt="">
+            <h2 class="navn"></h2>
+            <p class="kort"></p>
+        </article>
+    </template>
+
+
+
+
+    <footer id="kontakt"></footer>
+
+    <script src="script.js"></script>

@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    width: 100vw;
+    max-width: 1100px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 auto;
+    cursor: pointer:
+}
+
+main section {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*******HEADER NAVIGATION START*********/
+#menuknap {
+    display: inline-block;
+    font-family: pt-sans, sans-serif;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    color: white;
+}
+
+#menu {
+    list-style-type: none;
+    z-index: +1;
+    padding-bottom: 15px;
+}
+
+header nav a {
+    font-family: pt-serif, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-right: 10px;
+    color: white;
+    padding-left: 30px;
+}
+
+/****Header Web*****/
+@media (min-width:765px) {
+    header {
+        background-image: url();
+        min-height: 250px;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        display: initial;
+    }
+
+    #menu li {
+        display: inline-block;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        float: right;
+    }
+
+    header nav a {
+        font-family: pt-serif, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding-right: 50px;
+        color: white;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/*******HEADER NAVIGATION SLUT*********/
+
+/****MENUKORT Web*****/
+@media (min-width:765px) {
+
+    h1 {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    header h1 {
+        position: fixed;
+        color: #F2A20C;
+        font-family: ohno-fatface, serif;
+        font-style: normal;
+        font-weight: 900;
+        padding-top: 40px;
+        padding-left: 100px;
+    }
+
+
+    #dropdownDrinks {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    #dropdownknap {
+        display: none;
+    }
+
+    #sorterdrinks.hidden {
+        display: initial;
+    }
+
+    #sorterdrinks li {
+        display: inline-block;
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    sorterdrinks {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    button.filter {
+        width: 140px;
+        padding: 15px 20px;
+        margin: 5px 3px;
+        border: 0;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+/*******MENUKORT NAVIGATION SLUT*********/
+
+/*******Drinks*********/
+#drink {
+    border: 1.5px solid #f4f4f4;
+    margin: 10px;
+}
+
+#drink img {
+    box-shadow: 0px 0px 15px 0px rgba(179, 179, 179, 1);
+    width: 100%;
+}
+
+#drink h2 {
+    font-family: pt-serif, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+}
+
+#drink .kort {
+    font-family: pt-serif, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0px 10px;
+    margin: 0;
+}
