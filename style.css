@@ -24,6 +24,15 @@ main section {
     display: none;
 }
 
+h1 {
+    text-align: center;
+    font-family: pt-serif, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    padding-top: 50px;
+}
+
 
 /*******HEADER NAVIGATION START*********/
 #menuknap {
