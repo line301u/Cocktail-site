@@ -78,9 +78,9 @@ function toggleMenu() {
 function toggleSorterdrinks() {
     console.log("toggleSorterdrinks");
 
-    document.querySelector("#dropdownDrinks").classList.toggle("hidden");
+    document.querySelector("#sorterdrinks").classList.toggle("hidden");
 
-    let erSkjult = document.querySelector("#dropdownDrinks").classList.contains("hidden");
+    let erSkjult = document.querySelector("#sorterdrinks").classList.contains("hidden");
 
     if (erSkjult == true) {
         document.querySelector("#dropdownknap").textContent = "↓ Sorter efter";

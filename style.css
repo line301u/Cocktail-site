@@ -1,3 +1,4 @@
+/*******GENERELLE INDSTILLINGER*********/
 * {
     margin: 0;
 }
@@ -33,6 +34,7 @@ h1 {
     padding-top: 50px;
 }
 
+/*******GENERELLE INDSTILLINGER*********/
 
 /*******HEADER NAVIGATION START*********/
 #menuknap {
@@ -42,7 +44,7 @@ h1 {
     cursor: pointer;
     padding-bottom: 10px;
     margin-left: 10px;
-    color: white;
+    color: black;
 }
 
 #menu {
@@ -59,16 +61,13 @@ header nav a {
     font-size: 1.5rem;
     text-decoration: none;
     padding-right: 10px;
-    color: white;
+    color: black;
     padding-left: 30px;
 }
 
-/****Header Web*****/
+/****HEADER WEB*****/
 @media (min-width:765px) {
     header {
-        background-image: url();
-        min-height: 250px;
-        background-size: cover;
         margin-bottom: 10px;
     }
 
@@ -95,7 +94,8 @@ header nav a {
         font-size: 1.5rem;
         text-decoration: none;
         padding-right: 50px;
-        color: white;
+        color: black;
+
     }
 
     #menu {
@@ -107,9 +107,50 @@ header nav a {
 
 /*******HEADER NAVIGATION SLUT*********/
 
-/****MENUKORT Web*****/
-@media (min-width:765px) {
+/*******DROPDOWN NAVIGATION START*********/
+#dropdownknap {
+    display: block;
+    font-family: pt-serif, serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #F2A20C;
+    color: white;
+    padding: 15px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+}
 
+#dropdownDrinks {
+    list-style-type: none;
+    z-index: +1;
+}
+
+button.filter {
+    cursor: pointer;
+    border: none;
+    background-color: #F2A20C;
+    color: black;
+    padding: 15px 20px;
+    margin-bottom: 2px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #EAC68C;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+/****DRINK NAVIGATION WEB*****/
+@media (min-width:765px) {
     h1 {
         padding-top: 15px;
         padding-bottom: 20px;
@@ -124,7 +165,6 @@ header nav a {
         padding-top: 40px;
         padding-left: 100px;
     }
-
 
     #dropdownDrinks {
         display: block;
@@ -163,9 +203,7 @@ header nav a {
     }
 }
 
-/*******MENUKORT NAVIGATION SLUT*********/
-
-/*******Drinks*********/
+/*******DRINKS START*********/
 #drink {
     border: 1.5px solid #f4f4f4;
     margin: 10px;
@@ -191,3 +229,5 @@ header nav a {
     padding: 0px 10px;
     margin: 0;
 }
+
+/*******DRINKS SLUT*********/
