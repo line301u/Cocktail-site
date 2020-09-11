@@ -1,20 +1,19 @@
 /*******GENERELLE INDSTILLINGER*********/
 * {
-    margin: 0;
+    margin: auto 0;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 #container {
     width: 100vw;
-    max-width: 1100px;
+    max-width: 1200px;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     margin: 0 auto;
-    cursor: pointer:
 }
 
 main section {
@@ -37,39 +36,54 @@ h1 {
 /*******GENERELLE INDSTILLINGER*********/
 
 /*******HEADER NAVIGATION START*********/
+/*******LOGO*********/
+#logo {
+    position: relative;
+    top: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+/*******LOGO*********/
 #menuknap {
     display: inline-block;
     font-family: pt-sans, sans-serif;
     font-size: 2.5rem;
     cursor: pointer;
-    padding-bottom: 10px;
-    margin-left: 10px;
-    color: black;
+    position: absolute;
+    top: 20px;
+    color: white;
+    right: 20px;
+    z-index: +1;
+
 }
 
 #menu {
-    list-style-type: none;
-    z-index: +1;
-    padding-bottom: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    height: 100vh;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.58);
+    padding-top: 100px;
 }
 
-header nav a {
+#menu a {
     font-family: pt-serif, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
     text-decoration: none;
-    padding-right: 10px;
     color: black;
-    padding-left: 30px;
 }
 
+
+
 /****HEADER WEB*****/
+/*
 @media (min-width:765px) {
-    header {
-        margin-bottom: 10px;
-    }
 
     #menuknap {
         display: none;
@@ -93,8 +107,8 @@ header nav a {
         font-style: normal;
         font-size: 1.5rem;
         text-decoration: none;
-        padding-right: 50px;
-        color: black;
+        color: white;
+        padding-right: 25px;
     }
 
     #menu {
@@ -102,8 +116,20 @@ header nav a {
         width: 100%;
     }
 }
+*/
+
 
 /*******HEADER NAVIGATION SLUT*********/
+
+/*******SPLASH START*********/
+#splash {
+    background-image: url(billeder/splashgreen.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 75% 10%;
+
+}
 
 /*******DROPDOWN NAVIGATION START*********/
 #dropdownknap {
@@ -112,7 +138,7 @@ header nav a {
     font-style: normal;
     font-size: 1.2rem;
     cursor: pointer;
-    background-color: #F2A20C;
+    background-color: #b6dcf6;
     color: white;
     padding: 15px 20px;
     margin-left: 10px;
@@ -128,7 +154,7 @@ header nav a {
 button.filter {
     cursor: pointer;
     border: none;
-    background-color: #F2A20C;
+    background-color: #b6dcf6;
     color: black;
     padding: 15px 20px;
     margin-bottom: 2px;
@@ -138,7 +164,7 @@ button.filter {
 }
 
 button:hover {
-    background-color: #EAC68C;
+    background-color: #d9ebf4;
 }
 
 ul {
@@ -175,14 +201,12 @@ ul {
         padding-top: 5px;
     }
 
-    sorterdrinks {
-        position: fixed;
-        top: 0;
+    #sorterdrinks {
         width: 100%;
     }
 
     button.filter {
-        width: 120px;
+        width: 200px;
         padding: 15px 20px;
         margin: 5px 3px;
         border: 0;
@@ -193,12 +217,10 @@ ul {
 
 /*******DRINKS START*********/
 #drink {
-    border: 1.5px solid #f4f4f4;
     margin: 10px;
 }
 
 #drink img {
-    box-shadow: 0px 0px 15px 0px rgba(179, 179, 179, 1);
     width: 100%;
 }
 
@@ -216,6 +238,17 @@ ul {
     font-weight: 100;
     padding: 0px 10px;
     margin: 0;
+}
+
+#popKnap {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 5px 3px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    background-color: #b6dcf6;
+    bottom: 0;
 }
 
 /*******DRINKS SLUT*********/

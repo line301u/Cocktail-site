@@ -25,10 +25,10 @@ function visDrinks() {
 
         if (filter == "alle" || filter == drink.gsx$kategori.$t) {
             const klon = template.cloneNode(true).content;
-            klon.querySelector("img").src = "Billeder/" + drink.gsx$billede.$t + ".png";
+            klon.querySelector("img").src = "billeder/" + drink.gsx$billede.$t + ".png";
             klon.querySelector(".navn").textContent = drink.gsx$navn.$t;
             klon.querySelector(".kort").textContent = drink.gsx$kort.$t;
-            klon.querySelector("article").addEventListener("click", () => visDetaljer(drink));
+            klon.querySelector("#popKnap").addEventListener("click", () => visDetaljer(drink));
             container.appendChild(klon);
         }
     })
@@ -37,7 +37,7 @@ function visDrinks() {
 function visDetaljer(drink) {
     popop.style.display = "block";
     popop.querySelector("h2").textContent = drink.gsx$navn.$t;
-    popop.querySelector("img").src = "Billeder/" + drink.gsx$billede.$t + ".png";
+    popop.querySelector("img").src = "billeder/" + drink.gsx$billede.$t + ".png";
     popop.querySelector(".ingredienser").textContent = drink.gsx$ingredienser.$t;
     popop.querySelector(".opskrift").textContent = drink.gsx$fremgangsmåde.$t;
 }
