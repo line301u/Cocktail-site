@@ -231,3 +231,47 @@ ul {
 }
 
 /*******DRINKS SLUT*********/
+
+/*******SINGLEVIEW START*********/
+#popop {
+    z-index: 5;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+}
+
+#popop article {
+    background-color: white;
+    height: auto;
+    width: 50vw;
+    margin-top: 100px;
+    margin-left: 40px;
+    padding-bottom: 30px;
+}
+
+#popop .navn {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#popop p {
+    padding: 10px;
+    font-family: pt-sans, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+#luk {
+    position: fixed;
+    font-size: 2rem;
+    color: black;
+    background-color: transparent;
+    padding: .1em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px;
+}

@@ -38,7 +38,8 @@ function visDetaljer(drink) {
     popop.style.display = "block";
     popop.querySelector("h2").textContent = drink.gsx$navn.$t;
     popop.querySelector("img").src = "imgs/small/" + drink.gsx$billede.$t + "-sm.jpg";
-    popop.querySelector(".lang").textContent = drink.gsx$lang.$t;
+    popop.querySelector(".ingredienser").textContent = drink.gsx$ingredienser.$t;
+    popop.querySelector(".opskrift").textContent = drink.gsx$fremgangsmåde.$t;
 }
 
 document.querySelector("#luk").addEventListener("click", () => popop.style.display = "none");
