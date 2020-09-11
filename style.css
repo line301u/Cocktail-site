@@ -14,6 +14,7 @@ img {
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     margin: 0 auto;
+    align-items: stretch;
 }
 
 main section {
@@ -32,6 +33,8 @@ h1 {
     font-size: 3rem;
     padding-top: 50px;
 }
+
+
 
 /*******GENERELLE INDSTILLINGER*********/
 
@@ -124,7 +127,7 @@ h1 {
 /*******SPLASH START*********/
 #splash {
     background-image: url(billeder/splashgreen.png);
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-size: cover;
     background-position: 75% 10%;
@@ -230,13 +233,14 @@ ul {
     font-weight: 600;
     font-size: 1.2rem;
     padding: 10px 10px;
+    text-align: center;
 }
 
 #drink .kort {
     font-family: pt-serif, sans-serif;
     font-size: 1rem;
     font-weight: 100;
-    padding: 0px 10px;
+    padding: 20px 10px;
     margin: 0;
 }
 
@@ -255,44 +259,98 @@ ul {
 
 /*******SINGLEVIEW START*********/
 #popop {
-    z-index: 5;
-    display: none;
     top: 0;
-    left: 0;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    background-color: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
 }
 
 #popop article {
+    position: relative;
+    top: 17%;
     background-color: white;
-    height: auto;
-    width: 50vw;
-    margin-top: 100px;
-    margin-left: 40px;
-    padding-bottom: 30px;
+    height: 600px;
 }
 
-#popop .navn {
-    padding-left: 10px;
-    padding-top: 5px;
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0 20px 0;
+    align-items: center;
 }
 
-#popop p {
-    padding: 10px;
-    font-family: pt-sans, sans-serif;
-    font-style: normal;
-    font-size: 1rem;
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-direction: row;
+    color: black;
+    gap: 30px;
+}
+
+.tekst {
+    flex-basis: 200px;
+    flex-grow: 1;
 }
 
 #luk {
-    position: fixed;
-    font-size: 2rem;
-    color: black;
-    background-color: transparent;
-    padding: .1em;
-    cursor: pointer;
-    border: none;
-    box-shadow: 2px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f0ede6;
+    border: solid 1px #dd6c42;
+    width: 30px;
+    height: 30px;
+    color: #dd6c42;
+
+}
+
+#popop img {
+    width: 400px;
+
+}
+
+#popop h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.drink-overskrift {}
+
+@media only screen and (min-width: 880px) {
+    #menu button {
+        display: inline;
+    }
+
+    #popop article {
+        height: 500px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 1100px) {
+
+    .sectionwrapper {
+        flex-direction: row;
+        padding: 0 150px 0;
+    }
+
+    #popop article {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    #popop article {
+        height: 500px;
+    }
+
 }
