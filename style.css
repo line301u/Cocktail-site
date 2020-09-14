@@ -33,11 +33,19 @@ main section {
 
 h1 {
     text-align: center;
-    font-family: pt-serif, serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 3rem;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     padding-top: 50px;
+}
+
+p {
+    font-family: Sweet Sans Pro Extra Light, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 24px;
 }
 
 
@@ -55,24 +63,33 @@ h1 {
 }
 
 .pil {
-    height: 80px;
-    width: 80px;
     position: absolute;
     bottom: 5px;
-    left: 50vw;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    left: calc(50vw - 40px);
+
 }
+
+.centering-container {
+    height: 100vh;
+}
+
 
 /*******LOGO*********/
 #menuknap {
     display: inline-block;
-    font-family: pt-sans, sans-serif;
-    font-size: 2.5rem;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     cursor: pointer;
     position: absolute;
     top: 20px;
     color: white;
     right: 20px;
     z-index: +1;
+    font-size: 1.5rem;
 
 }
 
@@ -82,21 +99,25 @@ h1 {
     right: 0;
     text-align: right;
     height: 100vh;
-    width: 30vw;
-    background-color: rgba(255, 255, 255, 0.58);
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.70);
     padding-top: 100px;
 }
 
 #menu a {
-    font-family: pt-serif, sans-serif;
+    font-family: BC Sklonar Medium, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: black;
+    padding: 0 25px;
+
 }
 
+#menu li {
+    padding-bottom: 20px;
+}
 
 
 
@@ -119,6 +140,11 @@ h1 {
     background-color: #b6dcf6;
     color: white;
     padding: 15px 0px;
+    display: inline-block;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
 }
 
 #dropdownDrinks {
@@ -131,19 +157,24 @@ button.filter {
     cursor: pointer;
     border: none;
     background-color: #b6dcf6;
-    color: black;
+    color: white;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 15px 20px;
     margin-bottom: 2px;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
 
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #76b0e5;
 }
 
 ul {
+
     list-style: none;
     display: block;
     padding: 5px 0px;
@@ -152,8 +183,8 @@ ul {
 /****DRINK NAVIGATION WEB*****/
 @media (min-width:847px) {
     h1 {
-        padding-top: 15px;
-        padding-bottom: 20px;
+        padding-top: 90px;
+        padding-bottom: 60px;
     }
 
     #dropdownDrinks {
@@ -193,14 +224,26 @@ ul {
         height: 150px;
         width: 150px;
     }
+
+    #menuknap {
+        font-size: 2rem;
+
+    }
+
+    button:hover {
+        background-color: transparent;
+    }
+
+
+
 }
 
 /*******DRINKS START*********/
 #drink {
     display: flex;
-
     flex-direction: column;
     justify-content: space-between;
+    margin: 0 40px;
 }
 
 #drink img {
@@ -208,12 +251,11 @@ ul {
 }
 
 #drink h2 {
-    font-family: pt-serif, serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.2rem;
     padding: 10px 10px;
     text-align: center;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 #drink .kort {
@@ -222,6 +264,7 @@ ul {
     font-weight: 100;
     padding: 20px 10px;
     margin: 0;
+    padding-bottom: 40px;
 }
 
 #popKnap {
@@ -233,6 +276,11 @@ ul {
     text-align: center;
     background-color: #b6dcf6;
     bottom: 0;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
 }
 
 
@@ -253,6 +301,7 @@ ul {
     top: 17%;
     background-color: white;
     height: 600px;
+
 }
 
 .sectionwrapper {
@@ -298,6 +347,9 @@ ul {
 #popop h2 {
     text-align: center;
     padding-top: 30px;
+    font-family: BC Sklonar Medium, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .drink-overskrift {}
@@ -327,6 +379,10 @@ ul {
         height: 500px;
     }
 
+    #drink {
+        margin: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -338,6 +394,31 @@ ul {
 
 
 /***** CSS ANIMATION *****/
+
+/***** FOOTER *****/
+
+footer {
+    display: block;
+}
+
+#kontakt {
+    display: grid;
+    background-color: #76b0e5;
+    grid-template-columns: repeat(2, 1fr);
+    height: 300px;
+    margin-top: 100px;
+
+}
+
+.ikoner {
+    display: block;
+    height: 80px;
+    width: 80px;
+
+}
+
+
+/***** FOOTER END *****/
 
 .pil-ned {
     animation-name: pil-ned-kf;
