@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 img {
     max-width: 100%;
 }
@@ -40,12 +45,21 @@ h1 {
 /*******GENERELLE INDSTILLINGER*********/
 
 /*******HEADER NAVIGATION START*********/
-/*******LOGO*********/
+/*******LOGO / PIl *********/
 #logo {
     position: relative;
-    top: 10px;
-    height: 150px;
-    width: 150px;
+    top: 15px;
+    left: 15px;
+    height: 100px;
+    width: 100px;
+}
+
+.pil {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    bottom: 5px;
+    left: 50vw;
 }
 
 /*******LOGO*********/
@@ -85,49 +99,12 @@ h1 {
 
 
 
-/****HEADER WEB*****/
-/*
-@media (min-width:765px) {
-
-    #menuknap {
-        display: none;
-    }
-
-    #menu.hidden {
-        display: initial;
-    }
-
-    #menu li {
-        display: inline-block;
-        padding-bottom: 10px;
-        padding-top: 5px;
-        float: right;
-    }
-
-    header nav a {
-        font-family: pt-serif, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: white;
-        padding-right: 25px;
-    }
-
-    #menu {
-        top: 0;
-        width: 100%;
-    }
-}
-*/
-
 
 /*******HEADER NAVIGATION SLUT*********/
 
 /*******SPLASH START*********/
 #splash {
-    background-image: url(billeder/splashgreen.png);
+    background-image: url(billeder/splashoprange.png);
     height: 110vh;
     width: 100vw;
     background-size: cover;
@@ -138,21 +115,16 @@ h1 {
 /*******DROPDOWN NAVIGATION START*********/
 #dropdownknap {
     display: block;
-    font-family: pt-serif, serif;
-    font-style: normal;
-    font-size: 1.2rem;
     cursor: pointer;
     background-color: #b6dcf6;
     color: white;
-    padding: 15px 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: auto;
+    padding: 15px 0px;
 }
 
 #dropdownDrinks {
     list-style-type: none;
     z-index: +1;
+
 }
 
 button.filter {
@@ -160,25 +132,25 @@ button.filter {
     border: none;
     background-color: #b6dcf6;
     color: black;
-    padding: 15px 20px;
-    margin-bottom: 2px;
     width: 100%;
     text-align: left;
-    font-size: 1rem;
+    padding: 15px 20px;
+    margin-bottom: 2px;
+
 }
 
 button:hover {
-    background-color: #d9ebf4;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 ul {
     list-style: none;
     display: block;
-    padding: 5px 10px;
+    padding: 5px 0px;
 }
 
 /****DRINK NAVIGATION WEB*****/
-@media (min-width:765px) {
+@media (min-width:847px) {
     h1 {
         padding-top: 15px;
         padding-bottom: 20px;
@@ -188,7 +160,8 @@ ul {
         display: block;
         width: 100vw;
         text-align: center;
-        padding: 30px 0px;
+        background-color: #b6dcf6;
+
     }
 
     #dropdownknap {
@@ -210,12 +183,15 @@ ul {
     }
 
     button.filter {
-        width: 200px;
-        padding: 15px 20px;
-        margin: 5px 3px;
+        padding: 20px 50px;
         border: 0;
         cursor: pointer;
         text-align: center;
+    }
+
+    #logo {
+        height: 150px;
+        width: 150px;
     }
 }
 
