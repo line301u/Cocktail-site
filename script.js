@@ -14,9 +14,10 @@ async function hentData() {
     visDrinks();
 }
 
+
+
 function visDrinks() {
     console.log(visDrinks);
-
     //Løb gennem array
     const container = document.querySelector("#container");
     const template = document.querySelector("template");
