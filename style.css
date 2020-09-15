@@ -136,7 +136,7 @@ p {
     top: 0;
     right: 0;
     text-align: right;
-    height: 100vh;
+    height: 95.7vh;
     width: 200px;
     background-color: rgba(255, 255, 255, 0.70);
     padding-top: 100px;
@@ -357,11 +357,13 @@ ul {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #f0ede6;
-    border: solid 1px #dd6c42;
-    width: 30px;
-    height: 30px;
-    color: #dd6c42;
+    background-color: #b6dcf6;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 #popop img {
@@ -409,7 +411,7 @@ ul {
 
 
 
-/*FOOTER SLUT*/
+/*FOOTER START*/
 
 #kontakt {
     display: grid;
