@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", hentData);
 const popop = document.querySelector("#popop");
 
 
+// Data hentes ind fra googlesheet og sendes videre til funktionen visDrinks
 async function hentData() {
     const respons = await fetch(link);
     drinks = await respons.json();
@@ -15,7 +16,7 @@ async function hentData() {
 }
 
 
-
+// Funktionen visDrinks sætter hver enkelt drink i HTML
 function visDrinks() {
     console.log(visDrinks);
     //Løb gennem array
@@ -35,6 +36,8 @@ function visDrinks() {
     })
 }
 
+
+// Funktionen viser den enkelte drink seperat når der klikkes på den
 function visDetaljer(drink) {
     popop.style.display = "block";
     popop.querySelector("h2").textContent = drink.gsx$navn.$t;
@@ -45,12 +48,14 @@ function visDetaljer(drink) {
 
 document.querySelector("#luk").addEventListener("click", () => popop.style.display = "none");
 
+// Funktion der sætter eventListeners på filtreringsknapperne
 function addEventListenersToButtons() {
     document.querySelectorAll(".filter").forEach((btn) => {
         btn.addEventListener("click", filterBTNs);
     });
 }
 
+//Funktion der filtrere indholdet på siden alt efter hvilken knap der trykkes på
 function filterBTNs() {
     filter = this.dataset.kategori;
     document.querySelector("h1").textContent = this.textContent;
@@ -62,6 +67,7 @@ function filterBTNs() {
     visDrinks();
 }
 
+//Funktion til burgermenuen i headeren
 function toggleMenu() {
     console.log("toggleMenu");
 
@@ -77,6 +83,8 @@ function toggleMenu() {
     }
 }
 
+
+//Funktion der gør filtreringsknapperne til dropdownmenu på mobil
 function toggleSorterdrinks() {
     console.log("toggleSorterdrinks");
 
