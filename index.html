@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Popop vindue, singleview -->
     <section id="popop">
         <article id="article">
             <button id="luk">X</button>
@@ -32,7 +33,9 @@
         </article>
     </section>
 
+
     <header>
+        <!-- Indhold af header indeholder splashbillede, logo og pil -->
         <section id="splash">
             <div id="logo">
                 <a href="index.html#splash"><img src="billeder/logo.svg" alt="logo"></a>
@@ -44,6 +47,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Indhold af header indeholder menulinie i burgermenu der vises på både mobil og desktop -->
             <nav>
                 <div id="menuknap">Menu ☰</div>
                 <ul id="menu" class="hidden">
@@ -54,8 +59,10 @@
                 </ul>
             </nav>
         </section>
-
     </header>
+
+
+    <!--Filtreringsmenu som vises som menubar på desktop og som dropdown menu på mobil, dataatributter -->
     <nav id="dropdownDrinks">
         <div id="dropdownknap"> ↓ Sorter efter</div>
         <ul id="sorterdrinks" class="hidden">
@@ -75,6 +82,7 @@
 
 
     <template>
+        <!-- Indhold af <template> tag er HTML skabelon for de enkelte drinks  -->
         <article id="drink">
             <img src="" alt="">
             <h2 class="navn"></h2>
@@ -87,12 +95,12 @@
 
 
     <footer id="kontakt">
+        <!-- Footer indeholder sociale medie ikoner som linker til det pågældene website -->
         <h2>Følg os på Facebook og Instagram</h2>
         <div class="ikoner">
             <a href="facebook.com"><img src="billeder/facebook.svg" alt="fb"></a>
             <a href="instagram.com"><img src="billeder/instagram.svg" alt="ig"></a>
         </div>
-
     </footer>
 
     <script src="script.js"></script>
