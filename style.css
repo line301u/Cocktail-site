@@ -412,11 +412,8 @@ ul {
 
 
 /*FOOTER START*/
-
 #kontakt {
-    display: grid;
     background-color: #76b0e5;
-    grid-template-columns: repeat(1, 1fr);
     height: 200px;
     margin-top: 100px;
 }
@@ -433,11 +430,11 @@ ul {
 
 .ikoner {
     text-align: center;
-
 }
 
 .ikoner img {
     padding-right: 30px;
+    padding-top: 20px;
 }
 
 /*FOOTER SLUT*/
