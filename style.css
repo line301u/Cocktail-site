@@ -82,7 +82,7 @@ p {
     height: 80px;
     width: 80px;
     margin: 0 auto;
-    /*calc brugt til at positionere pilen centreret udfra dens størrelse*/
+    /*calc brugt til at positionere pilen centreret udfra ikonets/billedets størrelse*/
     left: calc(50vw - 40px);
 
 }
@@ -117,6 +117,7 @@ p {
 
 /*MENU START*/
 #menuknap {
+    /*Burgermenu ikon+tekst placeret i toppen af websitet*/
     display: inline-block;
     font-family: BC Sklonar Medium, sans-serif;
     font-style: normal;
@@ -131,6 +132,7 @@ p {
 }
 
 #menu {
+    /*Burgermenuen udseende */
     position: absolute;
     top: 0;
     right: 0;
@@ -142,6 +144,7 @@ p {
 }
 
 #menu a {
+    /*Menupunkterne inde i burgermenuen*/
     font-family: BC Sklonar Medium, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -158,6 +161,7 @@ p {
 /*HEADER SLUT*/
 
 /*DROPDOWN NAVIGATION MOBIL - START*/
+/*sorter knap som vises på mobil*/
 #dropdownknap {
     display: block;
     cursor: pointer;
@@ -177,7 +181,7 @@ p {
 }
 
 button.filter {
-    /*Filtrerings knapperne/Menu*/
+    /*Filtrerings knapperne i dropdown menu på mobil*/
     cursor: pointer;
     border: none;
     background-color: #b6dcf6;
@@ -193,6 +197,7 @@ button.filter {
 }
 
 button:hover {
+    /*Hover i en mørkere blå farver som indikere det man er over på mobilen*/
     background-color: #76b0e5;
 }
 
@@ -208,6 +213,8 @@ ul {
 
 /*DRINK NAVIGATION DESKTOP START*/
 @media (min-width:847px) {
+
+    /*Mediaquery sat på så indholdet ændrer sig fra 847px og størrer*/
     h1 {
         padding-top: 90px;
         padding-bottom: 60px;
@@ -221,6 +228,7 @@ ul {
     }
 
     #dropdownknap {
+        /*SKjuler dropwdown sorter knappen når man er på desktop størrelse skærm*/
         display: none;
     }
 
@@ -235,10 +243,12 @@ ul {
     }
 
     #sorterdrinks {
+        /*Filtrerings menuen fylder hele vinduets længde*/
         width: 100%;
     }
 
     button.filter {
+        /*Filtrerings knapperne på desktop*/
         padding: 20px 50px;
         border: 0;
         cursor: pointer;
@@ -255,6 +265,7 @@ ul {
     }
 
     button:hover {
+        /*Hover farver fjernet fra filtreringsknapperne på desktop*/
         background-color: transparent;
     }
 }
@@ -281,7 +292,7 @@ ul {
 }
 
 #drink .kort {
-    /*Kort beskrivelse af drink, data hentet fra googlesheet vha. javascript*/
+    /*Kort beskrivelse af drink, data hentet fra googlesheet vha. json/javascript*/
     font-family: Sweet Sans Pro Extra Light, sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -308,7 +319,7 @@ ul {
     font-size: 1rem;
 }
 
-/*DRINKS I GRID START*/
+/*DRINKS I GRID SLUT*/
 
 /*SINGLEVIEW POPOP START*/
 #popop {
@@ -319,7 +330,6 @@ ul {
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     display: none;
-
 }
 
 #popop article {
@@ -334,7 +344,6 @@ ul {
     grid-auto-rows: 1fr;
     padding: 0 150px;
     align-content: center;
-
 }
 
 .popop-img {
@@ -398,11 +407,9 @@ ul {
     }
 }
 
-@media only screen and (min-width: 1440px) {}
-
-
 
 /*FOOTER START*/
+/*Footeren indeholder h2 overskrift og to ikoner som er links til FB/IG website*/
 #kontakt {
     background-color: #76b0e5;
     height: 200px;

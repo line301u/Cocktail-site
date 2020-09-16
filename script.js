@@ -25,6 +25,8 @@ function visDrinks() {
     container.innerHTML = "";
     drinks.feed.entry.forEach(drink => {
 
+
+        // if = hvis filter er på alle vises alle drinks ellers hvis filter er en valgt drink ændres indholdet til den valgte
         if (filter == "alle" || filter == drink.gsx$kategori.$t) {
             const klon = template.cloneNode(true).content;
             klon.querySelector("img").src = "billeder/" + drink.gsx$billede.$t + ".svg";
@@ -46,6 +48,7 @@ function visDetaljer(drink) {
     popop.querySelector(".opskrift").textContent = drink.gsx$fremgangsmåde.$t;
 }
 
+// Knap som lukker popopvinduet - Det vises ikke længere
 document.querySelector("#luk").addEventListener("click", () => popop.style.display = "none");
 
 // Funktion der sætter eventListeners på filtreringsknapperne
