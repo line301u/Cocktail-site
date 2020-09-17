@@ -4,7 +4,6 @@
 }
 
 
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
@@ -53,9 +52,7 @@ p {
 /* GENERELLE INDSTILLINGER SLUT*/
 
 
-
 /*HEADER START - SPLASH, LOGO, PIL*/
-
 /*SPLASH START*/
 #splash {
     /*Splash billede sættes ind og fylder hele siden */
@@ -67,7 +64,6 @@ p {
 }
 
 /*SPLASH SLUT*/
-
 /*LOGO / PIl START*/
 #logo {
     /*Logo indsættes, har position relative og positioneres i forhold til sig selv */
@@ -86,7 +82,6 @@ p {
     margin: 0 auto;
     /*calc brugt til at positionere pilen centreret udfra ikonets/billedets størrelse*/
     left: calc(50vw - 40px);
-
 }
 
 .centering-container {
@@ -116,7 +111,6 @@ p {
 
 /* CSS ANIMATION PIL SLUT */
 /*LOGO / PIl SLUT */
-
 /*MENU START*/
 #menuknap {
     /*Burgermenu ikon+tekst placeret i toppen af websitet*/
@@ -161,7 +155,6 @@ p {
 }
 
 /*HEADER SLUT*/
-
 /*DROPDOWN NAVIGATION MOBIL - START*/
 /*sorter knap som vises på mobil*/
 #dropdownknap {
@@ -210,7 +203,6 @@ ul {
 }
 
 /*DROPDOWN NAVIGATION MOBIL - SLUT*/
-
 
 
 /*DRINK NAVIGATION DESKTOP START*/
@@ -322,7 +314,6 @@ ul {
 }
 
 /*DRINKS I GRID SLUT*/
-
 /*SINGLEVIEW POPOP START*/
 #popop {
     /*Popop vindue åbner når der klikkes på "Læs mere" knappen*/
@@ -372,7 +363,6 @@ ul {
     grid-row: 3/4;
 }
 
-
 #luk {
     /*Luk-knappen til popvinduet*/
     position: absolute;
@@ -402,11 +392,9 @@ ul {
     #menu button {
         display: inline;
     }
-
 }
 
 @media only screen and (min-width: 1100px) {
-
     #drink {
         margin: 0;
     }
@@ -415,9 +403,7 @@ ul {
         display: grid;
         padding: 0 150px;
     }
-
 }
-
 
 /*FOOTER START*/
 /*Footeren indeholder h2 overskrift og to ikoner som er links til FB/IG website*/
