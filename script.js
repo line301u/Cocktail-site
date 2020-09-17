@@ -42,14 +42,20 @@ function visDrinks() {
 // Funktionen viser den enkelte drink seperat når der klikkes på den
 function visDetaljer(drink) {
     popop.style.display = "block";
+    popop.style.overflow = "auto";
     popop.querySelector("h2").textContent = drink.gsx$navn.$t;
     popop.querySelector("img").src = "billeder_pop/" + drink.gsx$billede.$t + ".pop.svg";
     popop.querySelector(".ingredienser").innerHTML = drink.gsx$ingredienser.$t.split(",").join("<br>");
     popop.querySelector(".opskrift").textContent = drink.gsx$fremgangsmåde.$t;
+    document.querySelector("body").style.overflow = "hidden";
 }
 
 // Knap som lukker popopvinduet - Det vises ikke længere
-document.querySelector("#luk").addEventListener("click", () => popop.style.display = "none");
+document.querySelector("#luk").addEventListener("click", () => {
+    popop.style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
+})
+
 
 // Funktion der sætter eventListeners på filtreringsknapperne
 function addEventListenersToButtons() {
