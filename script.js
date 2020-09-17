@@ -52,7 +52,11 @@ function visDetaljer(drink) {
 }
 
 // Knap som lukker popopvinduet - Det vises ikke længere
-document.querySelector("#luk").addEventListener("click", () => popop.style.display = "none");
+document.querySelector("#luk").addEventListener("click", () => {
+    popop.style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
+})
+
 
 // Funktion der sætter eventListeners på filtreringsknapperne
 function addEventListenersToButtons() {
