@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
@@ -340,11 +342,12 @@ ul {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    display: grid;
+    display: block;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
-    padding: 0 150px;
+    padding: 0 10px;
     align-content: center;
+    overflow: scroll;
 }
 
 /*Popop vinduets indhold sat op med grid lines*/
@@ -407,6 +410,12 @@ ul {
     #drink {
         margin: 0;
     }
+
+    #popop article {
+        display: grid;
+        padding: 0 150px;
+    }
+
 }
 
 
