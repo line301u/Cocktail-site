@@ -328,7 +328,7 @@ ul {
 
 #popop article {
     /*Popop vinduets indhold*/
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
