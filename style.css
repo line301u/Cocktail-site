@@ -214,7 +214,7 @@ ul {
 /*DRINK NAVIGATION DESKTOP START*/
 @media (min-width:847px) {
 
-    /*Mediaquery sat på så indholdet ændrer sig fra 847px og størrer*/
+    /*Mediaquery sat på så indholdet ændrer sig fra 847px og op efter*/
     h1 {
         padding-top: 90px;
         padding-bottom: 60px;
@@ -333,6 +333,7 @@ ul {
 }
 
 #popop article {
+    /*Popop vinduets indhold*/
     position: fixed;
     top: 50%;
     left: 50%;
@@ -346,6 +347,7 @@ ul {
     align-content: center;
 }
 
+/*Popop vinduets indhold sat op med grid lines*/
 .popop-img {
     grid-column: 1/3;
     grid-row: 1/5;
