@@ -46,7 +46,6 @@ function visDetaljer(drink) {
     popop.querySelector("img").src = "billeder_pop/" + drink.gsx$billede.$t + ".pop.svg";
     popop.querySelector(".ingredienser").innerHTML = drink.gsx$ingredienser.$t.split(",").join("<br>");
     popop.querySelector(".opskrift").textContent = drink.gsx$fremgangsmåde.$t;
-    document.querySelector("body").style.overFlow = "hidden";
 }
 
 // Knap som lukker popopvinduet - Det vises ikke længere
