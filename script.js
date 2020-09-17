@@ -33,6 +33,7 @@ function visDrinks() {
             klon.querySelector(".navn").textContent = drink.gsx$navn.$t;
             klon.querySelector(".kort").textContent = drink.gsx$kort.$t;
             klon.querySelector("#popKnap").addEventListener("click", () => visDetaljer(drink));
+            klon.querySelector("#drink").addEventListener("click", () => visDetaljer(drink));
             container.appendChild(klon);
         }
     })
@@ -48,15 +49,14 @@ function visDetaljer(drink) {
     popop.querySelector(".ingredienser").innerHTML = drink.gsx$ingredienser.$t.split(",").join("<br>");
     popop.querySelector(".opskrift").textContent = drink.gsx$fremgangsmåde.$t;
     document.querySelector("body").style.overflow = "hidden";
-
 }
 
 // Knap som lukker popopvinduet - Det vises ikke længere
 document.querySelector("#luk").addEventListener("click", () => {
     popop.style.display = "none";
     document.querySelector("body").style.overflow = "auto";
-})
 
+})
 
 // Funktion der sætter eventListeners på filtreringsknapperne
 function addEventListenersToButtons() {
