@@ -332,11 +332,12 @@ ul {
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     display: none;
+    overflow: scroll;
 }
 
 #popop article {
     /*Popop vinduets indhold*/
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -347,7 +348,6 @@ ul {
     grid-auto-rows: 1fr;
     padding: 0 10px;
     align-content: center;
-    overflow: scroll;
 }
 
 /*Popop vinduets indhold sat op med grid lines*/
